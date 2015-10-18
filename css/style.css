@@ -6,9 +6,10 @@
 body {
   font-family: 'Open Sans';
   font-size: 16px;
+  background: #FFFFF5;
 }
 
-h1, h2 {
+h1, h2, a, .family-bios strong {
   font-family: 'Roboto Slab';
   font-weight: 300;
   color: #595342;
@@ -25,6 +26,20 @@ h2 {
 
 p {
   margin: 10px 0 15px;
+}
+
+a {
+  font-family: 'Open Sans';
+  font-weight: inherit;
+  text-decoration: underline;
+}
+
+a:hover, a:focus {
+  color: #26200E;
+}
+
+hr {
+  border-top: 1px solid #D8D2C0;
 }
 
 header {
@@ -73,4 +88,31 @@ header {
 
 .family-intro {
     padding: 30px 15px;
+}
+
+.family-bios strong {
+    font-family: 'Roboto Slab';
+    display: block;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.family-bios p + p {
+  margin-top: -10px;
+}
+
+footer {
+  padding: 40px 0 60px;
+}
+
+footer p {
+  max-width: 700px;
+  margin: auto;
+  border-top: 1px solid #D8D2C0;
+  text-align: center;
+  font-style: italic;
+  padding: 20px;
+  font-weight: 300;
 }
